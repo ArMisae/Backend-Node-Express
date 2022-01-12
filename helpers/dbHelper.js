@@ -25,7 +25,6 @@ class DbHelper {
         
         const respuesta = await sp.execute(procedimiento);
         var d = await recorrer(respuesta || []);
-        console.log(d)
         resolve(d);
 
         
